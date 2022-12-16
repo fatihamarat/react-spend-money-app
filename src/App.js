@@ -3,6 +3,7 @@ import React,{useState, useEffect} from "react";
 import products from "./component/products.json";
 import Product from "./component/Product";
 import Basket from "./component/Basket";
+import "./index.css";
 
 function App() {
 
@@ -32,10 +33,15 @@ function App() {
   return (
     <div className="App">
       <Header money={money} total={total}/>
+      <div className="container products">
       {products.map(product=>(
-        <Product key={product.id} product={product} basket={basket} setBasket={setBasket} total={total} money={money}/>
+        <Product key={product.id} product={product} basket={basket} setBasket={setBasket} total={total} money={money} className="flex flex-row"/>
       ))}
-      {total > 0 && <Basket key={basket.item} basket={basket} products={products} total={total} resetBasket={resetBasket}/>}
+      </div>
+      <div>
+        {total > 0 && <Basket key={basket.item} basket={basket} products={products} total={total} resetBasket={resetBasket}/>}
+      </div>
+      
       
     </div>
     

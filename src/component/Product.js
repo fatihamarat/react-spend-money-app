@@ -1,5 +1,6 @@
 import React from 'react';
 import { moneyFormat } from './Helpers';
+import "./CSS/product.css";
 
 function Product({product,basket,setBasket,total,money}) {
     const basketItem = basket.find(item=>item.id===product.id)
@@ -33,21 +34,15 @@ function Product({product,basket,setBasket,total,money}) {
 
     
   return (
-    <div className= "p-4 bg-slate-200 border border-solid border-neutral-400 mb-5 w-1/2">
-        {/* <img></img> */}
+    <div className='product'>
+        <img src={product.image} alt=""/>
         <h6>{product.title}</h6>
-        <div>$ {moneyFormat(product.price)}</div>
-        <div>
-            <button disabled={total + product.price > money} onClick={addBasket} >Sepete At</button>
-            <span>{basketItem && basketItem.amount || 0}</span>
-            <button disabled={!basketItem} onClick={removeBasket}>Sepetten Çıkar</button>
-        </div>
-        
-       
-        
-        
-
-        
+        <div className='price'>$ {moneyFormat(product.price)}</div>
+        <div className="actions">
+            <button className='add-btn' disabled={total + product.price > money} onClick={addBasket} >Sepete At</button>
+            <span className='amount'>{basketItem && basketItem.amount || 0}</span>
+            <button className="remove-btn" disabled={!basketItem} onClick={removeBasket}>Sepetten Çıkar</button>
+        </div>        
     </div>
   )
 }
