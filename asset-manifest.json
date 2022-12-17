@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.375c6003.css",
-    "main.js": "/static/js/main.dc7975af.js",
-    "index.html": "/index.html",
-    "main.375c6003.css.map": "/static/css/main.375c6003.css.map",
-    "main.dc7975af.js.map": "/static/js/main.dc7975af.js.map"
+    "main.css": "/react-spend-money-app/static/css/main.375c6003.css",
+    "main.js": "/react-spend-money-app/static/js/main.dc7975af.js",
+    "index.html": "/react-spend-money-app/index.html",
+    "main.375c6003.css.map": "/react-spend-money-app/static/css/main.375c6003.css.map",
+    "main.dc7975af.js.map": "/react-spend-money-app/static/js/main.dc7975af.js.map"
   },
   "entrypoints": [
     "static/css/main.375c6003.css",
