@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-spend-money-app/static/css/main.375c6003.css",
+    "main.css": "/react-spend-money-app/static/css/main.6ac5b75d.css",
     "main.js": "/react-spend-money-app/static/js/main.dc7975af.js",
     "index.html": "/react-spend-money-app/index.html",
-    "main.375c6003.css.map": "/react-spend-money-app/static/css/main.375c6003.css.map",
+    "main.6ac5b75d.css.map": "/react-spend-money-app/static/css/main.6ac5b75d.css.map",
     "main.dc7975af.js.map": "/react-spend-money-app/static/js/main.dc7975af.js.map"
   },
   "entrypoints": [
-    "static/css/main.375c6003.css",
+    "static/css/main.6ac5b75d.css",
     "static/js/main.dc7975af.js"
   ]
 }
